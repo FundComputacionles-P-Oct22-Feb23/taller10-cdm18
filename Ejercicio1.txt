@@ -1,0 +1,65 @@
+1. Inicio
+2. Funcion principal
+3. 	operacionCuadrado, d [0-n]
+4. 	operacionTriangulo, d [0-n]
+5. 	operacionRectangulo, d [0-n]
+6. 	a, d [0-n]
+7. 	b, d [0-n]
+8. 	mensajeFinal, x (200)[{a-z},{A-Z},{0-9}]
+9. 	valorUsuario, i [1-3]
+10. 	<< "Ingrese 1 para obtener area de cuadrado 
+11.	    o 2 para obtener area triangulo 
+12.	    o 3 para obtener area rectangulo"
+13.	>>valorUsuario
+14. 	Si (valorUsuario == 1) entonces
+15. 		<< "Ingrese el lado del cuadrado"
+16.		<< a
+17. 		mensajeFinal <-- obtenerAreaCuadrado (a)
+18. 		<< mensajeFinal
+19.	Fin si
+20. 	Si (valorUsuario == 2) entonces
+21. 		<< "Ingrese el lado a del triangulo"
+22.		<< a
+23. 		<< "Ingrese el lado b del triangulo"
+24.		<< b
+25. 		mensajeFinal <-- obtenerAreaTriangulo (a, b)
+26. 		<< mensajeFinal
+27. 	Fin si
+28. 	Si (valorUsuario == 3) entonces
+29. 		<< "Ingrese el lado a del rectangulo
+30.		<< a
+31. 		<< "Ingrese el lado b del rectangulo
+32.		<< b
+33. 		mensajeFinal <-- obtenerAreaRectangulo(a,b)
+34. 		<< mensajeFinal
+35. 	Fin si
+33.Fin funcion principal		
+
+34. funcion obtenerAreaCuadrado (a, d):x
+35. 	operacionCuadrado, d [0-n]
+36. 	mensaje, x(200)[{a-z}, {BS}, {*, =}] <-- ""
+37. 	operacionCuadrado <-- a * a
+38. 	mensaje <-- "El area del cuadrado es = " + operacionCuadrado
+39. 	retorna mensaje
+40. fin funcion obtenerAreaCuadrado 
+
+41. funcion obtenerAreaTriangulo (a, i; b, i):x
+42. 	operacionTriangulo, i [0-n]
+43. 	mensaje, x(200)[{a-z}, {BS}, {*, =}] <-- ""
+44. 	operacionTriangulo, <-- (a * b)/2
+45. 	mensaje <-- "El area del triangulo es = " + operacionTriangulo
+46. 	retorna mensaje
+47. fin funcion obtenerAreaTriangulo 
+
+48. funcion obtenerAreaRectangulo(a, i; b, i):x
+49. 	operacionRectangulo, i [0-n]
+50. 	mensaje, x(200)[{a-z}, {BS}, {*, =}] <-- ""
+51. 	operacionRectangulo, <-- (a * b)
+52. 	mensaje <-- "El area del rectangulo es = " + operacionRectangulo 
+53. 	retorna mensaje
+54. fin funcion obtenerAreaRectangulo
+
+55. Fin
+
+
+

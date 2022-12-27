@@ -1,0 +1,51 @@
+1. Inicio
+2. Funcion principal
+3. 	a, d [0-n]
+4. 	b, d [0-n]
+5.	c, d [0-n]
+6. 	d, d [0-n]
+7. 	promedio, d [0-n]
+8. 	mensajeFinal, x (200)[{a-z},{A-Z},{0-9}]
+9. 	operacion, d [0-n]
+10. 	<< "Ingrese el primer parámetro" 
+11.	>> a
+12. 	<< "Ingrese el segundo parámetro" 
+13.	>> b
+14. 	<< "Ingrese el tercer parámetro" 
+15.	>> c
+16. 	<< "Ingrese el cuarto parámetro" 
+17.	>> d
+18.	mensajeFinal <-- obtenerPromedio(a,b,c,d)
+19.	<< mensajeFinal 
+20.Fin funcion principal		
+
+21. funcion obtenerPromedio (a, d; b, d; c, d; d, d ):x
+22. 	operacion, d [0-n]
+23. 	mensaje, x(200)[{a-z},{A-Z}, {BS}, {*, =}] <-- ""
+24. 	operacion <-- (a + b + c + d)
+25.	promedio <--- operacion/4
+
+26. 	Si (promedio >= 0 AND promedio <= 5) entonces
+27. 	mensaje <-- "El promedio de las notas: " + a + b + c + d + "es " + "Regular"
+28. 	Fin Si
+
+29. 	Si (promedio >= 5.1 AND promedio <= 8) entonces
+30. 	mensaje <-- "El promedio de las notas: " + a + b + c + d + "es " + "Bueno"
+31. 	Fin Si
+
+32. 	Si (promedio >= 8.1 AND promedio <= 9) entonces
+33. 	mensaje <-- "El promedio de las notas: " + a + b + c + d + "es " + "Muy Bueno"
+34. 	Fin Si
+
+35. 	Si (promedio >= 9.1 AND promedio <= 10) entonces
+36. 	mensaje <-- "El promedio de las notas: " + a + b + c + d + "es " + "Sobresaliente"
+37. 	Fin Si
+
+38. 	retorna mensaje
+39. fin funcion obtenerPromedio 
+
+
+40. Fin
+
+
+
